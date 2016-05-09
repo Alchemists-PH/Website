@@ -1,20 +1,34 @@
-# AlchemistPh
+## About Alchemists PH
 
-To start your Phoenix app:
+Alchemists PH is a non-profit organization made up of Elixir and Erlang enthusiasts whose goal is to contribute to the growth of its local community.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `npm install`
-  * Start Phoenix endpoint with `mix phoenix.server`
+> Want to learn more? See our [wiki](https://github.com/Alchemists-PH/Website/wiki)
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Contributing
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+Help us build a better community! We encourage everyone to contribute to this repository if something is missing or needs improvement. Contribute by helping us tackle issues, submit PRs and discuss ideas.
 
-## Learn more
+## Getting Started
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: http://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+To run this on your local machine, clone this repository:
+```
+git clone https://github.com/Alchemists-PH/Website.git
+cd alchemist_ph
+```
+
+### Setup
+
+> Note: Language versions are maintained in the [.tool-versions]() file.
+
+1. Install [asdf](https://github.com/HashNuke/asdf) for language version
+   management.
+2. Rename `config/database.exs.sample` to `config/database.exs` and replace the username and password with your local PostgreSQL credentials for all development configurations.
+3. Install dependencies with `mix deps.get`
+4. Create and migrate your database with `mix ecto.create && mix ecto.migrate`
+5. Install Node.js dependencies with `npm install`
+
+After you're done with the setup. You may do the following:
+
+* Start Phoenix endpoint with `mix phoenix.server`
+* Visit [`localhost:4000`](http://localhost:4000) and you're good to go!
+
