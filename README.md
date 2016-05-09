@@ -24,9 +24,13 @@ $ cd alchemist_ph
 1. Install [asdf](https://github.com/HashNuke/asdf) for language version
    management.
 2. Rename `config/database.exs.sample` to `config/database.exs` and replace the username and password with your local PostgreSQL credentials for all development configurations.
-3. Install dependencies with `mix deps.get`
-4. Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-5. Install Node.js dependencies with `npm install`
+3. Building Phoenix:
+
+```
+$ mix deps.get
+$ mix ecto.create && mix ecto.migrate
+$ npm install
+```
 
 After you're done with the setup. You may do the following:
 
