@@ -1,4 +1,4 @@
-## About Alchemists PH
+# About Alchemists PH
 
 Alchemists PH is a non-profit organization made up of Elixir and Erlang enthusiasts whose goal is to contribute to the growth of its local community.
 
@@ -11,6 +11,7 @@ Help us build a better community! We encourage everyone to contribute to this re
 ## Getting Started
 
 To run this on your local machine, clone this repository:
+
 ```
 git clone https://github.com/Alchemists-PH/Website.git
 cd alchemist_ph
@@ -32,3 +33,8 @@ After you're done with the setup. You may do the following:
 * Start Phoenix endpoint with `mix phoenix.server`
 * Visit [`localhost:4000`](http://localhost:4000) and you're good to go!
 
+## Join us!
+
+* [Facebook](https://www.facebook.com/groups/peeug)
+* [Twitter](https://twitter.com/alchemistsph)
+* [#elixir](https://phackers.slack.com/messages/elixir) on [Phackers Slack](phackers.io)
