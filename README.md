@@ -2,19 +2,19 @@
 
 Alchemists PH is a non-profit organization made up of Elixir and Erlang enthusiasts whose goal is to contribute to the growth of its local community.
 
-> Want to learn more? See our [wiki](https://github.com/Alchemists-PH/Website/wiki)
+> Want to learn more? See our [wiki](https://github.com/Alchemists-PH/Website/wiki).
 
 ## Contributing
 
 Help us build a better community! We encourage everyone to contribute to this repository if something is missing or needs improvement. Contribute by helping us tackle issues, submit PRs and discuss ideas.
 
-## Getting Started
+### Getting Started
 
 To run this on your local machine, clone this repository:
 
 ```
-git clone https://github.com/Alchemists-PH/Website.git
-cd alchemist_ph
+$ git clone https://github.com/Alchemists-PH/Website.git
+$ cd alchemist_ph
 ```
 
 ### Setup
@@ -37,4 +37,4 @@ After you're done with the setup. You may do the following:
 
 * [Facebook](https://www.facebook.com/groups/peeug)
 * [Twitter](https://twitter.com/alchemistsph)
-* [#elixir](https://phackers.slack.com/messages/elixir) on [Phackers Slack](phackers.io)
+* [#elixir](https://phackers.slack.com/messages/elixir) on [Phackers Slack](http://phackers.io)
