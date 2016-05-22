@@ -15,6 +15,7 @@
     "uglify-js-brunch": "~1.7.0",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html",
+    "sass-brunch": "^2.0.0",
     "onmount": "^1.2.0"
   },
 
