@@ -14,6 +14,9 @@ install:
   - mix local.hex --force
   - mix deps.get
 
+before_script:
+  - mix ecto.setup
+
 script:
   - mix test
 
