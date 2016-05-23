@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :alchemist_ph, AlchemistPh.Endpoint,
+config :alchemist_ph, Website.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -14,7 +14,7 @@ config :alchemist_ph, AlchemistPh.Endpoint,
   watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin"]]
 
 # Watch static and templates for browser reloading.
-config :alchemist_ph, AlchemistPh.Endpoint,
+config :alchemist_ph, Website.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
@@ -38,7 +38,7 @@ if File.exists?("config/database.exs") do
   import_config "database.exs"
 else
   # Configure your database
-  config :alchemist_ph, AlchemistPh.Repo,
+  config :alchemist_ph, Website.Repo,
     adapter: Ecto.Adapters.Postgres,
     username: "postgres",
     password: "postgres",

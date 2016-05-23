@@ -1,7 +1,7 @@
-defmodule AlchemistPh.Endpoint do
+defmodule Website.Endpoint do
   use Phoenix.Endpoint, otp_app: :alchemist_ph
 
-  socket "/socket", AlchemistPh.UserSocket
+  socket "/socket", Website.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -35,5 +35,5 @@ defmodule AlchemistPh.Endpoint do
     key: "_alchemist_ph_key",
     signing_salt: "Ey3frOf/"
 
-  plug AlchemistPh.Router
+  plug Website.Router
 end

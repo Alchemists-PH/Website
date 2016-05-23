@@ -1,3 +1,3 @@
-defmodule AlchemistPh.PageView do
-  use AlchemistPh.Web, :view
+defmodule Website.PageView do
+  use Website.Web, :view
 end

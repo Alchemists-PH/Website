@@ -1,3 +1,3 @@
-defmodule AlchemistPh.LayoutViewTest do
-  use AlchemistPh.ConnCase, async: true
+defmodule Website.LayoutViewTest do
+  use Website.ConnCase, async: true
 end

@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :alchemist_ph, AlchemistPh.Endpoint,
+config :alchemist_ph, Website.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "UG8dpGDPKC9mBeyniccN1AEm+EEhRj85BOg/EdoVXSynhhxsRBRYNAZ/JzeC7EdD",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: AlchemistPh.PubSub,
+  pubsub: [name: Website.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
@@ -32,4 +32,4 @@ config :phoenix, :template_engines,
   slim: PhoenixSlime.Engine,
   slime: PhoenixSlime.Engine
 
-config :alchemist_ph, :ecto_repos, [AlchemistPh.Repo]
+config :alchemist_ph, :ecto_repos, [Website.Repo]

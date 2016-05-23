@@ -1,5 +1,5 @@
-defmodule AlchemistPh.PageControllerTest do
-  use AlchemistPh.ConnCase
+defmodule Website.PageControllerTest do
+  use Website.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

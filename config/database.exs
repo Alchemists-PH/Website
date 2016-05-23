@@ -2,14 +2,14 @@ use Mix.Config
 
 cond do
   Mix.env == :dev ->
-    config :alchemist_ph, AlchemistPh.Repo,
+    config :alchemist_ph, Website.Repo,
       adapter: Ecto.Adapters.Postgres,
       database: "alchemist_ph_dev",
       hostname: "localhost",
       pool_size: 10
 
   Mix.env == :test ->
-    config :alchemist_ph, AlchemistPh.Repo,
+    config :alchemist_ph, Website.Repo,
       adapter: Ecto.Adapters.Postgres,
       database: "alchemist_ph_test",
       hostname: "localhost",

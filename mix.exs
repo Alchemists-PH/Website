@@ -1,4 +1,4 @@
-defmodule AlchemistPh.Mixfile do
+defmodule Website.Mixfile do
   use Mix.Project
 
   def project do
@@ -17,7 +17,7 @@ defmodule AlchemistPh.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {AlchemistPh, []},
+    [mod: {Website, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex]]
   end
