@@ -1,12 +1,12 @@
-defmodule AlchemistPh.Web do
+defmodule Website.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use AlchemistPh.Web, :controller
-      use AlchemistPh.Web, :view
+      use Website.Web, :controller
+      use Website.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule AlchemistPh.Web do
     quote do
       use Phoenix.Controller
 
-      alias AlchemistPh.Repo
+      alias Website.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import AlchemistPh.Router.Helpers
-      import AlchemistPh.Gettext
+      import Website.Router.Helpers
+      import Website.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule AlchemistPh.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import AlchemistPh.Router.Helpers
-      import AlchemistPh.ErrorHelpers
-      import AlchemistPh.Gettext
+      import Website.Router.Helpers
+      import Website.ErrorHelpers
+      import Website.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule AlchemistPh.Web do
     quote do
       use Phoenix.Channel
 
-      alias AlchemistPh.Repo
+      alias Website.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
-      import AlchemistPh.Gettext
+      import Website.Gettext
     end
   end
 

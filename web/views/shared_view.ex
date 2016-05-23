@@ -1,3 +1,3 @@
-defmodule AlchemistPh.SharedView do
-  use AlchemistPh.Web, :view
+defmodule Website.SharedView do
+  use Website.Web, :view
 end

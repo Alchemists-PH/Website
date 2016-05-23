@@ -1,5 +1,5 @@
-defmodule AlchemistPh.ErrorView do
-  use AlchemistPh.Web, :view
+defmodule Website.ErrorView do
+  use Website.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

@@ -1,4 +1,4 @@
-defmodule AlchemistPh.ModelCase do
+defmodule Website.ModelCase do
   @moduledoc """
   This module defines the test case to be used by
   model tests.
@@ -16,21 +16,21 @@ defmodule AlchemistPh.ModelCase do
 
   using do
     quote do
-      alias AlchemistPh.Repo
+      alias Website.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query, only: [from: 1, from: 2]
-      import AlchemistPh.ModelCase
+      import Website.ModelCase
     end
   end
 
   setup tags do
-    unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(AlchemistPh.Repo, [])
-    end
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Website.Repo)
 
-    :ok
+    unless tags[:async] do
+      Ecto.Adapters.SQL.Sandbox.mode(Website.Repo, {:shared, self()})
+    end
   end
 
   @doc """

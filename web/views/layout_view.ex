@@ -1,3 +1,3 @@
-defmodule AlchemistPh.LayoutView do
-  use AlchemistPh.Web, :view
+defmodule Website.LayoutView do
+  use Website.Web, :view
 end

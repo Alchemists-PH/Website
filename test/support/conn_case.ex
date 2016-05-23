@@ -1,4 +1,4 @@
-defmodule AlchemistPh.ConnCase do
+defmodule Website.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,21 +20,23 @@ defmodule AlchemistPh.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      alias AlchemistPh.Repo
+      alias Website.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import AlchemistPh.Router.Helpers
+      import Website.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint AlchemistPh.Endpoint
+      @endpoint Website.Endpoint
     end
   end
 
   setup tags do
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Website.Repo)
+
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(AlchemistPh.Repo, [])
+      Ecto.Adapters.SQL.Sandbox.mode(Website.Repo, {:shared, self()})
     end
 
     {:ok, conn: Phoenix.ConnTest.conn()}

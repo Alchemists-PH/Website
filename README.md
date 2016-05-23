@@ -14,7 +14,7 @@ To run this on your local machine, clone this repository:
 
 ```
 $ git clone https://github.com/Alchemists-PH/Website.git
-$ cd alchemist_ph
+$ cd website
 ```
 
 ### Setup
