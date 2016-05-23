@@ -1,0 +1,26 @@
+@import "../variables";
+@import "../utils/media-queries";
+
+.columnize {
+  & {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  > * {
+    flex: 1 100%;
+    margin-right: $gutter-width;
+  }
+
+  > *:last-child {
+    margin-right: 0;
+  }
+
+  @media #{$mobile} {
+    flex-wrap: wrap;
+
+    > * {
+      margin-bottom: $pad * 5;
+    }
+  }
+}

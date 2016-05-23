@@ -1,0 +1,40 @@
+@import "../variables";
+
+h1, h2 ,h3, h4, h5, h6 {
+  & {
+    line-height: 1.5;
+    font-weight: 700;
+    font-family: $sans;
+    color: $heading-color;
+  }
+}
+
+h1 {
+  font-size: $ms * $ms * $ms * $ms * 1em;
+  margin:  0 0 ($ms * $ms * $ms * $ms) * $pad 0;
+}
+
+h2 {
+  font-size: $ms * $ms * $ms * 1em;
+  margin:  0 0 ($ms * $ms ) * $pad 0;
+}
+
+h3 {
+  font-size: $ms * $ms * 1em;
+  margin:  0 0 $ms * $pad 0;
+}
+
+h4 {
+  font-size: $ms * 1em;
+}
+
+h4, h5, h6 {
+  margin:  0 0 $ms * $pad 0;
+}
+
+p {
+  color: $paragraph-color;
+  font-family: $sans;
+  line-height: 1.7;
+  margin:  0 0 ($ms * $ms) * $pad 0;
+}

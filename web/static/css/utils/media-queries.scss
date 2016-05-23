@@ -1,0 +1,51 @@
+//
+// Sensible media query helpers based on Bootstrap.
+//
+//     @media #{$tablet} {
+//       div {
+//         text-align: right;
+//       }
+//     }
+//
+// You will likely use these 4 mixins:
+//
+// - `phone`   (<= 768px)
+// - `tablet`  (> 768px)
+// - `laptop`  (> 992px)
+// - `desktop` (> 1200px)
+//
+// Also available are:
+//
+// - `portrait`   (<= 480px)  - targets phone in portrait mode.
+// - `mobile`     (<= 992px)  - targets phone + tablet.
+// - `nondesktop` (<= 1200px) - targets phone + tablet + laptop.
+//
+// Guide:
+// 
+//                               xs         sm              md             lg
+//                       480         768          992                1200
+//                  '     '     '     '     '     '     '     '     '     '     '
+//                        '           '           '                 '
+//     portrait    <------^           '           '                 '
+//     phone       <------------------^           '                 '
+//     mobile      <------------------------------^                 '
+//     nondesktop  <------------------------------------------------^
+//     tablet                         ^---------------------------------------->
+//     laptop                                     ^---------------------------->
+//     desktop                                                      ^---------->
+
+$screen-xxs-max: 480px  !default;
+$screen-sm-min:  768px  !default;
+$screen-md-min:  992px  !default;
+$screen-lg-min:  1200px !default;
+$screen-xs-max: $screen-sm-min - 1px !default;
+$screen-sm-max: $screen-md-min - 1px !default;
+$screen-md-max: $screen-lg-min - 1px !default;
+
+$portrait:   "(max-width: #{$screen-xxs-max})";
+$phone:      "(max-width: #{$screen-xs-max})";
+$mobile:     "(max-width: #{$screen-sm-max})";
+$nondesktop: "(max-width: #{$screen-md-max})";
+$tablet:     "(min-width: #{$screen-sm-min})";
+$laptop:     "(min-width: #{$screen-md-min})";
+$desktop:    "(min-width: #{$screen-lg-min})";
