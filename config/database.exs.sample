@@ -2,20 +2,20 @@ use Mix.Config
 
 cond do
   Mix.env == :dev ->
-    config :alchemist_ph, AlchemistPH.Repo,
+    config :website, AlchemistPH.Repo,
       adapter: Ecto.Adapters.Postgres,
       username: "postgres",
       password: "",
-      database: "alchemist_ph_dev",
+      database: "website_dev",
       hostname: "localhost",
       pool_size: 10
 
   Mix.env == :test ->
-    config :alchemist_ph, AlchemistPH.Repo,
+    config :website, AlchemistPH.Repo,
       adapter: Ecto.Adapters.Postgres,
       username: "postgres",
       password: "",
-      database: "alchemist_ph_test",
+      database: "website_test",
       hostname: "localhost",
       pool: Ecto.Adapters.SQL.Sandbox
 end

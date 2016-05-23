@@ -6,7 +6,7 @@
 use Mix.Config
 
 # Configures the endpoint
-config :alchemist_ph, Website.Endpoint,
+config :website, Website.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "UG8dpGDPKC9mBeyniccN1AEm+EEhRj85BOg/EdoVXSynhhxsRBRYNAZ/JzeC7EdD",
@@ -27,9 +27,9 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
-  
+
 config :phoenix, :template_engines,
   slim: PhoenixSlime.Engine,
   slime: PhoenixSlime.Engine
 
-config :alchemist_ph, :ecto_repos, [Website.Repo]
+config :website, :ecto_repos, [Website.Repo]

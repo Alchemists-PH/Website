@@ -1,5 +1,5 @@
 defmodule Website.Endpoint do
-  use Phoenix.Endpoint, otp_app: :alchemist_ph
+  use Phoenix.Endpoint, otp_app: :website
 
   socket "/socket", Website.UserSocket
 
@@ -8,7 +8,7 @@ defmodule Website.Endpoint do
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :alchemist_ph, gzip: false,
+    at: "/", from: :website, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -32,7 +32,7 @@ defmodule Website.Endpoint do
 
   plug Plug.Session,
     store: :cookie,
-    key: "_alchemist_ph_key",
+    key: "_website_key",
     signing_salt: "Ey3frOf/"
 
   plug Website.Router

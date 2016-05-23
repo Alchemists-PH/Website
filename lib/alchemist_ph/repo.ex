@@ -1,3 +1,3 @@
 defmodule Website.Repo do
-  use Ecto.Repo, otp_app: :alchemist_ph
+  use Ecto.Repo, otp_app: :website
 end

@@ -20,5 +20,5 @@ defmodule Website.Gettext do
 
   See the [Gettext Docs](http://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :alchemist_ph
+  use Gettext, otp_app: :website
 end
