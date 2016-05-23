@@ -1,5 +1,7 @@
 # About Alchemists PH
 
+[![Build Status](https://travis-ci.org/Alchemists-PH/Website.svg?branch=travis-config)](https://travis-ci.org/Alchemists-PH/Website/builds)
+
 Alchemists PH is a non-profit organization made up of Elixir and Erlang enthusiasts whose goal is to contribute to the growth of its local community.
 
 > Want to learn more? See our [wiki](https://github.com/Alchemists-PH/Website/wiki).
