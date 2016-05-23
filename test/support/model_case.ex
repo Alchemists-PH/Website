@@ -26,11 +26,11 @@ defmodule Website.ModelCase do
   end
 
   setup tags do
-    unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Website.Repo, [])
-    end
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Website.Repo)
 
-    :ok
+    unless tags[:async] do
+      Ecto.Adapters.SQL.Sandbox.mode(Website.Repo, {:shared, self()})
+    end
   end
 
   @doc """
