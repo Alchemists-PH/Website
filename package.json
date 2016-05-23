@@ -2,22 +2,20 @@
   "scripts": {
     "lint": "eslint 'web/static/**/*.js*'"
   },
-
-  "repository": {
-  },
-
+  "repository": {},
   "dependencies": {
     "babel-brunch": "~6.0.0",
     "brunch": "~2.1.3",
     "clean-css-brunch": "~1.8.0",
     "css-brunch": "~1.7.0",
     "javascript-brunch": "~1.8.0",
-    "uglify-js-brunch": "~1.7.0",
+    "normalize.css": "^4.1.1",
+    "onmount": "^1.2.0",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html",
-    "onmount": "^1.2.0"
+    "sass-brunch": "^2.0.0",
+    "uglify-js-brunch": "~1.7.0"
   },
-
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel-preset-es2015": "^6.6.0",
@@ -29,7 +27,6 @@
     "glob-brunch": "0.0.1-e",
     "postcss-brunch": "^0.5.0"
   },
-
   "engines": {
     "node": "5.6.0"
   }

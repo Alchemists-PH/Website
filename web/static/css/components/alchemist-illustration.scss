@@ -1,0 +1,12 @@
+.alchemist-illustration {
+  & {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1400px; // width temporarily defined until inline svg is loaded
+    width: 100%;
+  }
+
+  > img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+// Typography ------------------------------------------
+$font-size-base:          14px !default;
+
+$sans: 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+$code-sans: 'Inconsolata', 'Helvetica Neue', 'Arial', sans-serif;
+
+$font-family-sans-serif: $sans;
+$font-family-base: $sans !default;
+
+$font-size-base:          14px;
+$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85));
+
+// Sizes ===================================================
+
+$pad:                       8px;
+$ms:                        1.25;
+$gutter-width:              32px;
+
+// Colors ====================================================
+$elixir-violet:                     #6D41B5;
+$dove-gray:                         #757575;
+$charcoal:                          #454343;
+$mercury:                           #E6E6E6;
+
+
+// Specifically-used Colors ====================================================
+$paragraph-color:                   $dove-gray;
+$heading-color:                     $charcoal;
+$border-color:                      $mercury;
+
+// Container sizes =============================================================
+
+// Small screen ===================
+$container-tablet:             (720px + $gutter-width);
+$container-sm:                 $container-tablet;
+
+// Medium screen / desktop ===========
+$container-desktop:            (940px + $gutter-width);
+$container-md:                 $container-desktop;
+
+// Large screen / wide desktop ==========
+$container-large-desktop:      (1140px + $gutter-width);
+
+$container-lg:                 $container-large-desktop;

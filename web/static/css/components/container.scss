@@ -1,0 +1,17 @@
+@import "../variables";
+@import "../utils/media-queries";
+@import "../utils/grid";
+
+.container {
+  @include container-fixed;
+
+  @media #{$tablet} {
+    width: $container-sm;
+  }
+  @media #{$laptop} {
+    width: $container-md;
+  }
+  @media #{$desktop} {
+    width: $container-lg;
+  }
+}

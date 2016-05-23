@@ -1,0 +1,11 @@
+@import "../variables";
+@import "../utils/antialias";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+  @include antialias;
+}
