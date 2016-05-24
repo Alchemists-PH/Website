@@ -2,8 +2,7 @@
 
 .about-alchemists {
   & {
-    background: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.5)),
-      url('/images/map.png') 
+    background: url('/images/map.png') 
       top center / contain no-repeat;
     padding: $pad * 25 0;
   }
