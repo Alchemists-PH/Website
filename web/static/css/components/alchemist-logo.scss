@@ -1,0 +1,69 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes vaporize {
+  0% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes ants { 
+  0% { 
+    stroke-dashoffset: 0%; 
+  }
+}
+
+#alchemist-svg-logo {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.broken-line {
+  stroke-dasharray: 1 8;
+  stroke-dashoffset: 8; 
+  animation: ants 500ms ease-in-out infinite forwards;
+}
+
+#alchemist-emblem {
+  .clipped {
+    clip-path: url(#clipper);
+  }
+
+  #sun {
+    animation: vaporize 1100ms infinite linear;
+  }
+
+  #star1 {
+    animation: vaporize 900ms infinite linear;
+  }
+
+  #star2 {
+    animation: vaporize 850ms infinite linear;
+  }
+
+  #star3 {
+    animation: vaporize 750ms infinite linear;
+  }
+
+  .clipped > .chem1 {
+    animation: spin 4500ms infinite linear;
+    transform-origin: 50% 50%;
+  }
+
+  .clipped >.chem2 {
+    animation: spin 5000ms infinite linear;
+    transform-origin: 50% 50%;
+  }
+}
