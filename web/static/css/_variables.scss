@@ -17,8 +17,27 @@ $pad:                       8px;
 $ms:                        1.25;
 $gutter-width:              32px;
 
+$padding-base-vertical:     14px;
+$padding-base-horizontal:   20px;
+
+$padding-large-vertical:    16px;
+$padding-large-horizontal:  24px;
+
+$padding-small-vertical:    5px;
+$padding-small-horizontal:  10px;
+
+$padding-xs-vertical:       1px;
+$padding-xs-horizontal:     5px;
+
+$line-height-base:          1;
+$line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        0px !default;
+
 // Colors ====================================================
 $elixir-violet:                     #6D41B5;
+$dull-lavander:                     #AD96D3;
 $dove-gray:                         #757575;
 $charcoal:                          #454343;
 $mercury:                           #E6E6E6;
@@ -32,6 +51,14 @@ $border-color:                      $mercury;
 $btn-default-color:              $elixir-violet;
 $btn-default-bg:                 #fff;
 $btn-default-border:             $elixir-violet;
+
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $elixir-violet;
+$btn-primary-border:             $elixir-violet;
+
+$btn-alt-color:                   $elixir-violet;
+$btn-alt-bg:                      #fff;
+$btn-alt-border:                  #fff;
 
 // Container sizes =============================================================
 

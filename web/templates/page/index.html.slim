@@ -50,9 +50,15 @@ section.join-alchemists
               | Email
 
 
-header.site-header
-  h2.prelude
-    | Subscribe
-  p.subheadline
-    | Stay up to date on the news about Elixir /Erlang and meetup schedules by subscribing to our mailing list
+section.subscribe-alchemists
+  .container
+    .subscribe-paper
+      header.site-type.-alt
+        h2.prelude
+          | Subscribe
+        p.subheadline
+          | Stay up to date on the news about Elixir /Erlang and meetup schedules by subscribing to our mailing list
 
+        .form-group
+          input.form-input
+          = link 'Subscribe', to: page_path(@conn, :index), class: "button-ex -alt -large"

@@ -10,12 +10,24 @@
     text-align: left;
   }
 
+  &.-alt > .prelude { 
+    color: #fff;
+  }
+
+  &.-alt > .subheadline { 
+    color: $dull-lavander;
+  }
+
   > .prelude {
     color: $elixir-violet;
     font-family: $code-sans;
     text-transform: uppercase;
     font-size: $ms * 1em;
     letter-spacing: 0.5em;
+  }
+
+  > .subheadline {
+    font-size: $ms * $ms * 1em;
   }
 
   > .description {
