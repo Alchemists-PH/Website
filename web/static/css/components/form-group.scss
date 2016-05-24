@@ -1,0 +1,12 @@
+@import '../variables';
+
+.form-group {
+  &.-horizontal {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &.-horizontal > .form-input {
+    margin-right: $pad;
+  }
+}

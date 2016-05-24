@@ -59,6 +59,6 @@ section.subscribe-alchemists
         p.subheadline
           | Stay up to date on the news about Elixir /Erlang and meetup schedules by subscribing to our mailing list
 
-        .form-group
-          input.form-input
+        .form-group.-horizontal
+          input.form-input.-line placeholder="Email"
           = link 'Subscribe', to: page_path(@conn, :index), class: "button-ex -alt -large"

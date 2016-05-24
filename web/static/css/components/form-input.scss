@@ -1,0 +1,35 @@
+@import '../variables';
+
+.form-input {
+  &.-line {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid $dull-lavander;
+    background: transparent;
+    padding: 0 0 $pad 0;
+    margin-bottom: 0;
+    height: 57px;
+    line-height: 57px;
+    width: 100%;
+    font-size: $ms * $ms * 1em;
+    color: #fff;
+    transition: 0.3s all;
+  }
+
+  &.-line::placeholder {
+    color: $dull-lavander;
+  }
+
+
+  &.-line::placeholder:focus,
+  &.-line::placeholder:active {
+    color: rgba($dull-lavander, 0.4);
+  }
+
+  &:active, &:focus, &:hover {
+    outline: none;
+    border-bottom: 1px solid #fff;
+  }
+
+}
