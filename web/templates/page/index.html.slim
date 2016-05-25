@@ -6,7 +6,7 @@ section.splash-section
       | Philippine Elixir/Erlang Users Group
 
   .alchemist-illustration
-    img[src="#{static_path(@conn, "/images/alchemist-ph-orig.svg")}"]
+    = render Website.SharedView, "illustration.html", assigns
 
 section.about-alchemists
   .container
