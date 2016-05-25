@@ -9,10 +9,14 @@
     box-shadow: 0px 20px 32px rgba(#000, 0.05);
   }
 
+  > .columnize {
+    align-items: center;
+  }
+
   > .columnize > .heading {
     font-family: $code-sans;
     font-weight: 400;
-    font-size: $ms * $ms * $ms * $ms * $ms * $ms * $ms * 1em;
+    font-size: $ms * $ms * $ms * $ms * $ms * $ms * $ms * $ms * 1em;
     text-align: right;
     word-spacing: 500px;
     margin-top: $pad * 6;
