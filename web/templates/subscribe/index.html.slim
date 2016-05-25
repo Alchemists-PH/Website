@@ -1,0 +1,13 @@
+.container
+  = if info = get_flash(@conn, :info) do
+    h1 Thank you for subscribing!
+
+  = if error = get_flash(@conn, :error) do
+    h1 Oops, something went wrong
+
+  = link "Retry", to: page_path(@conn, :index), class: "button-ex -primary"
+
+
+  p You may also want to visit our:
+  = link "Github", to: "https://github.com/Alchemists-PH", class: "button-ex -primary"
+

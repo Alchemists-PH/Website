@@ -33,20 +33,26 @@ section.join-alchemists
           .social-item
             h4.heading Facebook Group
             p.description The group is open for everyone.
-            = link to: page_path(@conn, :index), class: "button-ex -default" do
-              i.ion-logo-facebook
+            = link to: "https://facebook.com/groups/peeug/", class: "button-ex -default" do
+              /i.ion-logo-facebook
+              | Join
+          .social-item
+            h4.heading Twitter
+            p.description Follow us.
+            = link to: "https://twitter.com/alchemistsph", class: "button-ex -default" do
+              /i.ion-logo-facebook
               | Join
           .social-item
             h4.heading Let's Chat
             p.description Join the #elixir channel under phackers.slack.com
-            = link to: page_path(@conn, :index), class: "button-ex -default" do
-              i.ion-ios-chatboxes
+            = link to: "http://phackers.io", class: "button-ex -default" do
+              /i.ion-ios-chatboxes
               | Let's chat
           .social-item
             h4.heading Contact Us
             p.description Drop us an email for inquiries
-            = link to: page_path(@conn, :index), class: "button-ex -default" do
-              i.ion-md-mail
+            = link to: "mailto:alchemist.philippines@gmail.com", class: "button-ex -default" do
+              /i.ion-md-mail
               | Email
 
 
@@ -59,6 +65,6 @@ section.subscribe-alchemists
         p.subheadline
           | Stay up to date on the news about Elixir /Erlang and meetup schedules by subscribing to our mailing list
 
-        .form-group.-horizontal
-          input.form-input.-line placeholder="Email"
-          = link 'Subscribe', to: page_path(@conn, :index), class: "button-ex -alt -large"
+        = render Website.SharedView, "subscribe.html", conn: @conn, changeset: @changeset, action: subscribe_path(@conn, :create)
+        = if info = get_flash(@conn, :info) do
+          p.subheadline= info

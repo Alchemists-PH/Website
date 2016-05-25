@@ -1,0 +1,6 @@
+= form_for @changeset, @action, fn f ->
+  .form-group.-horizontal
+    = text_input f, :first_name, required: true, class: "form-input -line", placeholder: "First Name"
+    = text_input f, :last_name, required: true, class: "form-input -line", placeholder: "Last Name"
+    = email_input f, :email, required: true, class: "form-input -line", placeholder: "Email"
+    = submit "Subscribe", class: "button-ex -alt -large"
