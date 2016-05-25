@@ -12,7 +12,9 @@ defmodule Website.SubscribeController do
 
     case Repo.insert(changeset) do
       {:ok, _product} ->
-        redirect(conn, to: subscribe_path(conn, :index))
+        conn
+        |> put_flash(:info, "Thank you for subscribing!")
+        |> redirect( to: subscribe_path(conn, :index))
       {:error, changeset} ->
         conn
         |> put_flash(:error, changeset)
