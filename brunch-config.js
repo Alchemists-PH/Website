@@ -58,6 +58,13 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
+    },
+    sass: {
+      options: {
+        includePaths: [
+          "node_modules/ionicons/dist/scss"
+        ]
+      }
     }
   },
 

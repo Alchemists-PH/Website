@@ -1,0 +1,15 @@
+@import "../variables";
+
+.social-item {
+  & {
+    margin-bottom: $pad * 10;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > .heading {
+    font-weight: 400;
+  }
+}

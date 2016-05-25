@@ -1,0 +1,13 @@
+@import "../variables";
+
+.subscribe-paper {
+  & {
+    border: 10px solid $dull-lavander;
+    border-bottom: none;
+    padding: $pad * 20 $pad * 20 $pad * 10;
+  }
+
+  > .site-type > .subheadline {
+    margin-bottom: $pad * 10;
+  }
+}
