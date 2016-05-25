@@ -1,0 +1,8 @@
+.container
+  = if error = get_flash(@conn, :error) do
+    .alert.-error= error
+
+  h1 Thank you for subscribing!
+  p You may also want to visit our:
+  = link "Github", to: "https://github.com/Alchemists-PH", class: "button-ex -primary"
+
