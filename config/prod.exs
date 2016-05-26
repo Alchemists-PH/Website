@@ -13,8 +13,8 @@ use Mix.Config
 # which you typically run after static files are built.
 config :website, Website.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [scheme: "https", host: "alchemists-website.herokuapp.com", port: 443],
-  force_ssl: [rewrite_on: [:x_forwarded_proto]],
+  url: [scheme: "http", host: "www.alchemists-ph.com", port: 80],
+  #force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json",
   secret_key_base: System.get_env("SECRET_KEY_BASE")
 
@@ -22,7 +22,7 @@ config :website, Website.Endpoint,
 config :website, Website.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
-  pool_size: 15,
+  pool_size: 10,
   ssl: true
 
 # Do not print debug messages in production
