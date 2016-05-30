@@ -21,7 +21,7 @@ $ cd website
 
 ### Setup
 
-> Note: Language versions are maintained in the [.tool-versions]() file.
+> Note: Language versions are maintained in the [.tool-versions](https://github.com/Alchemists-PH/Website/blob/master/.tool-versions) file.
 
 1. Install [asdf](https://github.com/HashNuke/asdf) for language version
    management.
