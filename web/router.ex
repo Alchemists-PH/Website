@@ -17,7 +17,9 @@ defmodule Website.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/thanks", PageController, :thanks
     resources "/subscribe", SubscribeController, only: [:index, :create]
+    resources "/proposals", ProposalController, only: [:new, :create]
   end
 
   # Other scopes may use custom stacks.

@@ -1,0 +1,31 @@
+h2 Listing proposals
+
+table.table
+  thead
+    tr
+      th Name
+      th Email
+      th Title
+      th Description
+      th Duration
+      th Bio
+      th Extra info
+      th
+  tbody
+    = for proposal <- @proposals do
+      tr
+        td= proposal.name
+        td= proposal.email
+        td= proposal.title
+        td= proposal.description
+        td= proposal.duration
+        td= proposal.bio
+        td= proposal.extra_info
+        td class="text-right"
+          = link "Show", to: proposal_path(@conn, :show, proposal), class: "btn btn-default btn-xs"
+          | &nbsp;
+          = link "Edit", to: proposal_path(@conn, :edit, proposal), class: "btn btn-default btn-xs"
+          | &nbsp;
+          = link "Delete", to: proposal_path(@conn, :delete, proposal), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs"
+
+= link "New proposal", to: proposal_path(@conn, :new)

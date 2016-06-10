@@ -14,13 +14,11 @@
     width: 100%;
     font-size: $ms * $ms * 1em;
     color: #fff;
-    transition: 0.3s all;
   }
 
   &.-line::placeholder {
     color: $dull-lavander;
   }
-
 
   &.-line::placeholder:focus,
   &.-line::placeholder:active {
@@ -32,4 +30,50 @@
     border-bottom: 1px solid #fff;
   }
 
+  &.-line.-dark {
+    @extend .-line;
+    color: $dove-gray;
+    border-bottom: 1px solid lighten($dull-lavander, 10%);
+    font-size: $ms * 1em;
+    padding: $pad 0 0;
+    margin: $pad * 2 0;
+    line-height: 30px;
+    transition: 0.3s all;
+  }
+
+  &.-line.-dark::placeholder {
+    color: rgba($dull-lavander, 0.4);
+  }
+
+  &.-line.-dark::placeholder:focus,
+  &.-line.-dark::placeholder:active {
+    color: rgba($dull-lavander, 0.4);
+  }
+
+  &.-dark:active, &.-dark:focus {
+    outline: none;
+    border-bottom: 1.5px solid darken($dull-lavander, 20%);
+  }
+
+  &.-line.-dark:required:valid {
+    border-bottom: 1.5px solid lighten(green, 10%);
+  }
+
+  &.-dark:focus ~ .floating-label,
+  &.-dark:valid ~ .floating-label {
+    top: 3px;
+    font-size: 0.9em;
+    color: $charcoal;
+    font-weight: 700;
+    outline: none;
+  }
+
+  &.-dark:focus ~ .floating-label.textarea,
+  &.-dark:valid ~ .floating-label.textarea {
+    top: -10px;
+  }
+
+  &.textarea {
+    min-height: 6em;
+  }
 }
