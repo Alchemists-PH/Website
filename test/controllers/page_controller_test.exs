@@ -3,6 +3,6 @@ defmodule Website.PageControllerTest do
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"
-    assert html_response(conn, 200) =~ "Alchemist PH: Philippine Elixir/Erlang User Group"
+    assert html_response(conn, 200) =~ "Philippine Elixir/Erlang User Group"
   end
 end

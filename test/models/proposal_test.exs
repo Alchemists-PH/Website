@@ -3,8 +3,16 @@ defmodule Website.ProposalTest do
 
   alias Website.Proposal
 
-  @valid_attrs %{bio: "some content", description: "some content", duration: "some content", email: "some content", extra_info: "some content", name: "some content", title: "some content"}
-  @invalid_attrs %{}
+  @valid_attrs %{
+    bio: "some bio",
+    description: "some description",
+    duration: "45 mins",
+    email: "email@test.com",
+    extra_info: "some info",
+    name: "alchemists ph",
+    title: "what makes elixir great"
+  }
+  @invalid_attrs %{email: "invalid email format"}
 
   test "changeset with valid attributes" do
     changeset = Proposal.changeset(%Proposal{}, @valid_attrs)
