@@ -7,7 +7,12 @@ defmodule Website.PageController do
     render conn, "index.html", changeset: Subscriber.changeset(%Subscriber{})
   end
 
-  def thanks(conn, _parmas) do
-    render conn, "thanks.html"
+  def thanks_proposal(conn, _params) do
+    render(conn, "thanks_proposal.html")
   end
+
+  def thanks_subscription(conn, _params) do
+    render(conn, "thanks_subscription.html")
+  end
+
 end
