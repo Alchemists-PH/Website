@@ -22,7 +22,7 @@ defmodule Website.ProposalController do
       {:ok, _proposal} ->
         conn
         |> put_flash(:info, "Your proposal has been submitted")
-        |> redirect(to: page_path(conn, :thanks))
+        |> redirect(to: page_path(conn, :thanks_proposal))
       {:error, changeset} ->
         render(conn, "new.html", changeset: changeset)
     end

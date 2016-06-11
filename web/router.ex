@@ -17,8 +17,12 @@ defmodule Website.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/thanks", PageController, :thanks
-    resources "/subscribe", SubscribeController, only: [:index, :create]
+    get "/proposals/thanks", PageController, :thanks_proposal
+    get "/subscribe/thanks", PageController, :thanks_subscription
+
+    resources "/subscribe", SubscribeController, only: [:create]
+    get "/subscribe/errors", SubscribeController, :errors
+
     resources "/proposals", ProposalController, only: [:new, :create]
   end
 
