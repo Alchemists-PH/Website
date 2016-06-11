@@ -1,0 +1,28 @@
+h2 Show proposal
+
+ul
+  li
+    strong Name:&nbsp;
+    = @proposal.name
+  li
+    strong Email:&nbsp;
+    = @proposal.email
+  li
+    strong Title:&nbsp;
+    = @proposal.title
+  li
+    strong Description:&nbsp;
+    = @proposal.description
+  li
+    strong Duration:&nbsp;
+    = @proposal.duration
+  li
+    strong Bio:&nbsp;
+    = @proposal.bio
+  li
+    strong Extra info:&nbsp;
+    = @proposal.extra_info
+
+= link "Edit", to: proposal_path(@conn, :edit, @proposal)
+| &nbsp;
+= link "Back", to: proposal_path(@conn, :index)

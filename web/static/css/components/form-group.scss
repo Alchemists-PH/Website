@@ -4,9 +4,26 @@
   &.-horizontal {
     display: flex;
     align-items: flex-end;
+    margin-bottom: 10px;
+    position: relative;
   }
 
   &.-horizontal > .form-input {
     margin-right: $pad;
+  }
+
+  &.-horizontal > .floating-label {
+    position:absolute;
+    pointer-events: none;
+    left: 0;
+    top: 30px;
+    transition: all 0.2s ease;
+    color: lighten($charcoal, 40%);
+    font-size: $ms * 1em;
+
+    &:active, &:focus {
+      box-shadow: none;
+      outline: none;
+    }
   }
 }

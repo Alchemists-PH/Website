@@ -1,0 +1,34 @@
+section.subscribe-section
+  .container.proposal
+    .join-card
+      .proposal-form
+        .header
+          h3 Tell us about your proposal
+
+        = form_for @changeset, @action, fn f ->
+          .form-group.-horizontal
+            = text_input f, :name, class: "form-input -line -dark", required: true
+            = label f, "Your name here", class: "floating-label"
+
+          .form-group.-horizontal
+            = text_input f, :email, class: "form-input -line -dark", required: true
+            = label f, "Your email, please", class: "floating-label"
+
+          .form-group.-horizontal
+            = text_input f, :title, class: "form-input -line -dark", required: true
+            = label f, "What's the title of your talk?", class: "floating-label"
+
+          .form-group.-horizontal
+            = textarea f, :description, class: "form-input -line -dark textarea", required: true
+            = label f, "What will your talk be about?", class: "floating-label textarea"
+
+          .form-group.-horizontal
+            = textarea f, :bio, class: "form-input -line -dark textarea", required: true
+            = label f, "Tell us a little something about yourself", class: "floating-label textarea"
+
+          .form-group.-horizontal
+            = textarea f, :extra_info, class: "form-input -line -dark textarea", required: true
+            = label f, "Do you have any past speaking experiences?", class: "floating-label textarea"
+
+          .form-group.-horizontal
+            = submit "Submit", class: "button-ex -default -right"
