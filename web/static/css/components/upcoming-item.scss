@@ -1,0 +1,21 @@
+@import "../variables";
+
+
+.upcoming-item {
+  & {
+    display: flex;
+    align-items: center;
+  }
+
+  > .details > .location {
+    font-size: $ms * $ms * $ms * 1em;
+  }
+
+  > .details > .location {
+  }
+
+  > .action {
+    margin-left: auto;
+  }
+
+}
