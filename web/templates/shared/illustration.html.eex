@@ -449,6 +449,16 @@
 		<path fill="#6D41B5" d="M757.354,271.695h-6.301v7.167l-7.22-7.167h-20.081v-25.201h33.602V271.695z M721.652,244.394v29.402
 			h21.342l8.4,8.398h1.76v-8.398h6.3v-29.402H721.652z"/>
 	</g>
+
+	<g id="hex">
+		<line fill="none" stroke="#6D41B5" stroke-miterlimit="10" x1="62.798" y1="141.099" x2="102.165" y2="208.978"/>
+		<line fill="none" stroke="#6D41B5" stroke-miterlimit="10" x1="43.114" y1="175.039" x2="121.849" y2="175.039"/>
+		<line fill="none" stroke="#6D41B5" stroke-miterlimit="10" x1="102.165" y1="141.099" x2="62.798" y2="208.978"/>
+		<path fill="none" stroke="#6D41B5" stroke-miterlimit="10" d="M102.165,141.099H62.798l-19.684,33.939l19.684,33.939h39.367
+			l19.684-33.939L102.165,141.099z"/>
+		<polygon fill="#FFFFFF" stroke="#6D41B5" stroke-miterlimit="10" points="92.265,191.908 72.698,191.908 62.914,175.038 
+			72.698,158.168 92.265,158.168 102.049,175.038 		"/>
+	</g>
 </g>
 <g id="alchemist-emblem">
 	<path id="glass-white" fill="#FFFFFF" d="M509.834,158.514c0-0.482-0.318-0.817-0.605-0.817h-52.574
