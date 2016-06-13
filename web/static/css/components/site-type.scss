@@ -26,6 +26,10 @@
     letter-spacing: 0.5em;
   }
 
+  > .headline > .digitize {
+    font-family: $code-sans;
+  }
+
   > .subheadline {
     font-size: $ms * $ms * 1em;
   }

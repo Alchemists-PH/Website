@@ -1,0 +1,16 @@
+.brand-icon {
+  & {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background: url('/images/logo-svg.svg');
+    background-size: 70px 70px;
+    vertical-align: middle;
+    transition: opacity ease-in-out;
+  }
+}
+
+a.brand-icon:hover,
+a.brand-icon:focus {
+  opacity: 0.9;
+}
