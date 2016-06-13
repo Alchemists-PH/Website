@@ -8,10 +8,10 @@
     top: $pad * 2;
     right: $pad * 2;
     left: $pad * 2;
+    z-index: $z-index-navbar;
   }
 
   > .right {
     margin-left: auto;
   }
-
 }

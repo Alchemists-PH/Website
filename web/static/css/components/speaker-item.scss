@@ -1,0 +1,12 @@
+@import '../variables';
+
+.speaker-item {
+  & {
+    display: flex;
+    margin-bottom: $pad * 4;
+  }
+
+  > .avatar {
+    margin-right: $pad * 4;
+  }
+}

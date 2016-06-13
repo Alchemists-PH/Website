@@ -1,0 +1,50 @@
+@import "../variables";
+@import "../utils/unstyle-list";
+
+.meetup-list {
+  & {
+    padding-bottom: $pad * 10;
+  }
+
+  > .heading {
+    color: $elixir-violet;
+    font-family: $code-sans;
+    text-transform: uppercase;
+    font-size: $ms * 1em;
+    letter-spacing: 0.5em;
+    padding-bottom: $pad * 2;
+    border-bottom: 1px solid $border-color;
+    margin: 0;
+  }
+
+  > .list {
+    @include unstyle-list();
+  }
+
+  > .list > .item {
+    font-size: 1em;
+    display: flex;
+    border-bottom: 1px solid $border-color;
+    padding: $pad * 2 0;
+    margin-bottom: 0;
+  }
+
+  > .list > .item:last-child {
+    border-bottom: none;
+  }
+
+
+  > .list > .item > .name {
+    font-weight: 700;
+    margin-right: $pad;
+    color: $charcoal;
+  }
+
+  > .list > .item > .name:hover {
+    color: $elixir-violet;
+  }
+
+  > .list > .item > .date {
+    margin-left: auto;
+  }
+}

@@ -22,5 +22,9 @@
     .details
       h4.venue AElogica HQ, Bonifacio Global City
       p.time June 30, 2016, Thurday. 7PM to 9PM
-  .action
-    = link 'Register', to: "http://www.ticketbase.com/events/alchemists-ph-2nd-meet-up", class: "button-ex -primary"
+  = link 'Register', to: "http://www.ticketbase.com/events/alchemists-ph-2nd-meet-up", class: "button-ex -primary"
+
+.container.-narrow
+  = render Website.SharedView, "speakers-list.html"
+  = render Website.SharedView, "call-for-speakers.html"
+  = render Website.SharedView, "meetups-list.html"

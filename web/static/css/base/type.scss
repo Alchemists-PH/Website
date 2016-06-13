@@ -32,9 +32,18 @@ h4, h5, h6 {
   margin:  0 0 $ms * $pad 0;
 }
 
-p {
+ul, li, p {
   color: $paragraph-color;
   font-family: $sans;
   line-height: 1.7;
   margin:  0 0 ($ms * $ms) * $pad 0;
+}
+
+a {
+  color: $elixir-violet;
+  text-decoration: none;
+
+  &:hover, &:active, &:focus {
+    color: $dull-lavander;
+  }
 }
