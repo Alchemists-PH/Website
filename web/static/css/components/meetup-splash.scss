@@ -1,0 +1,13 @@
+@import "../variables";
+
+.meetup-splash {
+  text-align: center;
+  padding: $pad * 20 0;
+  background: linear-gradient(rgba(#fff,0.5), rgba(#fff, 0.95), rgba(#fff,1)),
+    url('/images/meetup-02.jpg')
+    0% 0% / cover no-repeat;
+
+  > .site-type {
+    margin-bottom: $pad * 6;
+  }
+}

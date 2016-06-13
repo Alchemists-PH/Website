@@ -1,0 +1,15 @@
+@import "../variables";
+
+.meetup-location {
+
+  > .icon {
+    font-size: 2.5em;
+    margin-bottom: $pad * 2;
+    color: $dove-gray;
+    line-height: 0;
+  }
+
+  > .details > .time {
+    margin-bottom: $pad * 4;
+  }
+}

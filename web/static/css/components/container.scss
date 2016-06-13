@@ -14,4 +14,8 @@
   @media #{$desktop} {
     width: $container-lg;
   }
+
+  &.-narrow {
+    max-width: $container-sm;
+  }
 }

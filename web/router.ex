@@ -17,6 +17,7 @@ defmodule Website.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/meetups", MeetupController, :index
     get "/proposals/thanks", PageController, :thanks_proposal
     get "/subscribe/thanks", PageController, :thanks_subscription
 
