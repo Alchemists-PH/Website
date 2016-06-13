@@ -9,4 +9,4 @@
   p.description 
     | Interested in speaking? Feel free to drop your proposal 
   .action
-    = link 'Submit a Proposal', to: "#", class: "button-ex -primary"
+    = link 'Submit a Proposal', to: proposal_path(@conn, :new), class: "button-ex -primary"
