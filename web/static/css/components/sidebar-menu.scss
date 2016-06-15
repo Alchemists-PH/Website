@@ -1,0 +1,27 @@
+@import "../variables";
+
+.sidebar-menu {
+  & {
+    position: fixed;
+    background: #fff;
+    border-left: 1px solid $border-color;
+    max-width: 350px;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    padding: $pad * 20 0;
+  }
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba($elixir-violet, 0.95);
+  z-index: -2;
+
+}

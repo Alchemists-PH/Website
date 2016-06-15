@@ -1,7 +1,9 @@
 .navigation-menu
   .right
-    .hamburger-menu
-      i.ion-md-menu
+    .hamburger-menu 
+      .icon-trigger role='nav-toggle'
+        i.ion-md-menu 
+      = render Website.SharedView, "sidebar.html", conn: @conn
 
 section.splash-section
   header.site-type
