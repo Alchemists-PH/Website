@@ -21,4 +21,5 @@ html lang="en"
   body
     = render @view_module, @view_template, assigns
 
+    script src="#{static_path(@conn, "/js/vendor.js")}"
     script src="#{static_path(@conn, "/js/app.js")}"
