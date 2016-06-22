@@ -9,20 +9,28 @@
     max-width: 350px;
     width: 100%;
     top: 0;
-    z-index: -1;
+    z-index: 1;
     height: 100%;
-    padding: $pad * 20 0;
     right: -350px;
     transition: 0.3s all;
   }
+
 
   &.-show {
     right: 0;
   }
 
+  > .close {
+    cursor: pointer;
+    font-size: 2.5em;
+    color: $charcoal;
+    position: absolute;
+    top: $pad * 3;
+    right: $pad * 3;
+  }
+
   > .content {
-    padding: 0 $pad * 2;
-  
+    padding: $pad * 20 $pad * 2;
   }
 
   > .content > .brand-icon {
@@ -75,7 +83,7 @@
     right: 0;
     bottom: 0;
     background: rgba($elixir-violet, 0.95);
-    z-index: -2;
+    z-index: 0;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s all;
