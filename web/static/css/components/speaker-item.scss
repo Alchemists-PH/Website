@@ -9,4 +9,9 @@
   > .avatar {
     margin-right: $pad * 4;
   }
+
+  > .avatar > img {
+    width: 120px;
+    height: 120px;
+  }
 }

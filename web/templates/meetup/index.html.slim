@@ -27,6 +27,6 @@
   = link 'Register', to: "http://www.ticketbase.com/events/alchemists-ph-2nd-meet-up", class: "button-ex -primary"
 
 .container.-narrow
-  /= render Website.SharedView, "speakers-list.html"
+  = render Website.SharedView, "speakers-list.html", assigns
   = render Website.SharedView, "call-for-speakers.html", assigns
   = render Website.SharedView, "meetups-list.html"
