@@ -4,7 +4,8 @@
   .right
     .hamburger-menu 
       .icon-trigger role='nav-toggle'
-        i.ion-md-menu 
+        i.ion-md-menu role='list-icon'
+      = render Website.SharedView, "sidebar.html", conn: @conn
 
 .meetup-splash
   .date-box
