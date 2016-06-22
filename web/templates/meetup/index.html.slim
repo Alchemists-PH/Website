@@ -2,7 +2,7 @@
   .left
     = link "", to: page_path(@conn, :index), class: "brand-icon"
   .right
-    .hamburger-menu 
+    .hamburger-menu
       .icon-trigger role='nav-open'
         i.ion-md-menu role='list-icon'
       = render Website.SharedView, "sidebar.html", conn: @conn
@@ -15,7 +15,7 @@
     h2.prelude
       | Upcoming Meetup
     h1.headline
-      | Alchemists PH |> Meetup 
+      | Alchemists PH |> Meetup
       span.digitize
         | 02
   .meetup-location
@@ -28,5 +28,5 @@
 
 .container.-narrow
   = render Website.SharedView, "speakers-list.html", assigns
-  = render Website.SharedView, "call-for-speakers.html", assigns
+  /= render Website.SharedView, "call-for-speakers.html", assigns
   = render Website.SharedView, "meetups-list.html"
