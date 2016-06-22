@@ -1,0 +1,31 @@
+.sidebar-menu role='sidebar-menu'
+  .close role='nav-close'
+    i.ion-md-close
+  .content
+    = link "", to: page_path(@conn, :index), class: "brand-icon"
+    ul.links
+      li.item
+        = link to: meetup_path(@conn, :index) do
+          | Meetups
+      li.item
+        = link to: "" do
+          | Learn Elixir 
+          span.grayed Coming Soon!
+      hr
+      li.item
+        | For more updates, follow us:
+      ul.social-links
+        li.item
+          = link to: "https://facebook.com/groups/peeug/", class: "" do
+            i.ion-logo-facebook
+        li.item
+          = link to: "https://twitter.com/alchemistsph", class: "" do
+            i.ion-logo-twitter
+        li.item
+          = link to: "http://phackers.io", class: "" do
+            i.ion-ios-chatboxes
+        li.item
+          = link to: "mailto:alchemist.philippines@gmail.com", class: "" do
+            i.ion-md-mail
+
+.sidebar-overlay role='sidebar-overlay'

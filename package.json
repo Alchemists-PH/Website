@@ -10,6 +10,7 @@
     "css-brunch": "~1.7.0",
     "ionicons": "^3.0.0",
     "javascript-brunch": "~1.8.0",
+    "jquery": "^3.0.0",
     "normalize.css": "^4.1.1",
     "onmount": "^1.2.0",
     "phoenix": "file:deps/phoenix",

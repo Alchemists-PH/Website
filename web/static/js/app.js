@@ -19,3 +19,7 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+glob('behaviors/*', (e, files) => files.forEach(require))
+
+$(document).ready(_ => onmount())

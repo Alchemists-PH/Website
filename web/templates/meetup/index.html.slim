@@ -2,8 +2,10 @@
   .left
     = link "", to: page_path(@conn, :index), class: "brand-icon"
   .right
-    .hamburger-menu
-      i.ion-md-menu
+    .hamburger-menu 
+      .icon-trigger role='nav-open'
+        i.ion-md-menu role='list-icon'
+      = render Website.SharedView, "sidebar.html", conn: @conn
 
 .meetup-splash
   .date-box
