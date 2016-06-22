@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../utils/unstyle-list";
 
 .sidebar-menu {
   & {
@@ -7,21 +8,82 @@
     border-left: 1px solid $border-color;
     max-width: 350px;
     width: 100%;
-    right: 0;
     top: 0;
     z-index: -1;
     height: 100%;
     padding: $pad * 20 0;
+    right: -350px;
+    transition: 0.3s all;
+  }
+
+  &.-show {
+    right: 0;
+  }
+
+  > .content {
+    padding: 0 $pad * 2;
+  
+  }
+
+  > .content > .brand-icon {
+    margin-bottom: $pad * 7;
+  }
+
+  > .content > .links {
+    padding: 0 $pad * 2;
+    margin: 0;
+  }
+
+  > .content > .links > .item {
+    font-size: $ms * 1em;
+    margin-bottom: $pad * 3;
+    display: block;
+  }
+
+  > .content > .links > .item > a > .grayed {
+    color: rgba($dove-gray,0.6);
+  }
+
+  > .content > .links > .social-links {
+    @include unstyle-list();
+  }
+
+  > .content > .links > .social-links > .item {
+    display: inline-block;
+    margin-right: $pad * 2;
+    font-size: 2em;
+  }
+
+  > .content > .links > .social-links > .item:last-child {
+    margin-right: 0;
+  }
+
+  > .content > .links > .social-links > .item > a {
+    color: $mercury;
+  }
+
+  > .content > .links > .social-links > .item > a:hover {
+    color: $elixir-violet;
   }
 }
 
 .sidebar-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba($elixir-violet, 0.95);
-  z-index: -2;
+  & {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($elixir-violet, 0.95);
+    z-index: -2;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all;
+  }
+
+  &.-show {
+    visibility: visible;
+    opacity: 1;
+  }
 
 }

@@ -2,7 +2,12 @@
 
 .hamburger-menu {
   > .icon-trigger {
+    cursor: pointer;
     font-size: 2.5em;
     color: $charcoal;
+  }
+
+  > .icon-trigger > i.-triggered:before {
+    content: "\f2c0";
   }
 }

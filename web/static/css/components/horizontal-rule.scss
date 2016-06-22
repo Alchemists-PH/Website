@@ -1,0 +1,7 @@
+@import "../variables";
+
+hr {
+  border: 1px solid $mercury;
+  border-bottom: none;
+  margin: $pad * 4 0;
+}
