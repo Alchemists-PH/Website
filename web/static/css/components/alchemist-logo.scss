@@ -39,6 +39,7 @@
 #alchemist-emblem {
   .clipped {
     clip-path: url(#clipper);
+    clip-path: url('http://www.alchemists-ph.com/#clipper'); // firefox clip-path fix
   }
 
   #sun {
@@ -60,10 +61,12 @@
   .clipped > .chem1 {
     animation: spin 4500ms infinite linear;
     transform-origin: 50% 50%;
+    transform-origin: 484px 383px; // firefox requires pixel unit for transform-origin
   }
 
-  .clipped >.chem2 {
+  .clipped > .chem2 {
     animation: spin 5000ms infinite linear;
     transform-origin: 50% 50%;
+    transform-origin: 484px 383px; // firefox requires pixel unit for transform-origin
   }
 }
